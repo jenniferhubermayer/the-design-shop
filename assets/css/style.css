@@ -8,4 +8,122 @@
 
 html{
     font-family: 'Karla', sans-serif;
+    color: #323A45;
 }
+
+body{
+    padding: 4vw 10vw 4vw 10vw;
+}
+
+h1{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h2, h3, p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a{
+ text-decoration: none;   
+ color: #323A45;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4vw;
+}
+
+ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+li{
+    display: inline;
+}
+
+/* ===== MAIN ===== */
+
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    width: 100%;
+}
+
+figure:nth-of-type(1){
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+figure:nth-of-type(2){
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+figure:nth-of-type(3){
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+figure:nth-of-type(4){
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+figure:nth-of-type(5){
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+figure:nth-of-type(6){
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+figure:nth-of-type(7){
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+figure img{
+    width: 100%;
+}
+
+figcaption{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+figcaption h2{
+    width: 80%;
+    order: 1;
+    padding-bottom: 0.25rem;
+}
+
+figcaption h3{
+    width: 100%;
+    order: 3;
+}
+
+figcaption p{
+    width: 20%;
+    order: 2;
+    text-align: right;
+}
+
+.product-company{
+    color: #848484;
+}
+
+/* ===== FOOTER ===== */
