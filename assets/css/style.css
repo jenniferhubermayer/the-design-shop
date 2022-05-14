@@ -16,8 +16,13 @@ body{
 }
 
 h1{
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-transform: uppercase;
+}
+
+h1:hover{
+    color: #848484;
 }
 
 h2, h3, p{
@@ -48,6 +53,10 @@ ul{
 
 li{
     display: inline;
+}
+
+li a{
+    letter-spacing: -0.5px;
 }
 
 header li a:hover{
